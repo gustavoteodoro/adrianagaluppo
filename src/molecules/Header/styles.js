@@ -7,6 +7,7 @@ export const HeaderTitle = styled.h1`
   text-align: center;
   transition: all .3s ease;
   opacity: 1;
+  outline: 0;
 `;
 
 export const HeaderContainer = styled.header`
