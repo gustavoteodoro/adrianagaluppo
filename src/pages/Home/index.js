@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { connect } from 'react-redux';
+import ProjectThumb from '../../molecules/ProjectThumb';
+
+import {
+  PortfolioContainer
+} from './styles';
 
 class Home extends Component {
   render() {
+    const {
+      entries,
+    } = this.props;
     return (
       <div>
-          <h1>Hello</h1>
-          <Link to="/projeto">Ir para a página projeto \o/</Link>
+        <PortfolioContainer>
+          {entries.map(entry => (
+            <ProjectThumb key={entry.sys.id} project={entry.fields} />
+          ))
+          }
+        </PortfolioContainer>
       </div>
     );
   }
 }
 
-export default Home;
+const mapStateToProps = state => ({
+  entries: state.entries,
+});
+
+export default connect(mapStateToProps)(Home);
