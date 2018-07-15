@@ -4,12 +4,6 @@ import { connect } from 'react-redux';
 import { ProjectContainer, ProjectTitle, ProjectDesc, ProjectImage } from './styles';
 
 class Project extends Component {
-  componentWillMount() {
-    const {
-      match,
-      entries,
-    } = this.props;
-  }
   render() {
     const {
       match,

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from '../../bosons/media';
 
 export const ProjectContainer = styled.main`
   display: block;
@@ -16,6 +17,13 @@ export const ProjectTitle = styled.h1`
   margin-top: 0;
   margin-bottom: -70px;
   margin-right: 100px;
+
+  ${media.mobile`
+    font-size: 40px;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0;
+  `}
 `;
 
 export const ProjectDesc = styled.p`
@@ -25,13 +33,25 @@ font-family: 'Roboto Slab',sans-serif;
   max-width: 500px;
   text-align: left;
   font-size: 22px;
+  line-height: 2;
   margin-left: 100px;
   margin-bottom: 0;
   margin-top: 0;
+
+  ${media.mobile`
+    font-size: 16px;
+    line-height: 2;
+    text-align: left;
+    margin: 0 20px;
+  `}
 `;
 
 export const ProjectImage = styled.img`
   display: block;
   max-width: 100%;
   margin: 100px auto;
+
+  ${media.mobile`
+    margin: 40px auto;
+  `}
 `;

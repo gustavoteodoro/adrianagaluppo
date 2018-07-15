@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-import {HeaderContainer, HeaderTitle, HeaderNav} from './styles';
+import { HeaderContainer, HeaderTitle } from './styles';
 
 class Header extends Component {
   render() {
