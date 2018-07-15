@@ -6,7 +6,7 @@ export const HeaderTitle = styled.h1`
   margin: 40px 0;
   text-align: center;
   transition: all .3s ease;
-  opacity: 1;
+  opacity: .6;
   outline: 0;
 `;
 
@@ -17,7 +17,7 @@ export const HeaderContainer = styled.header`
   ${props => !props.isHome && css`
     ${HeaderTitle} {
       transform: scale(0.8);
-      opacity: .6;
+      opacity: .4;
     }
   `}
 

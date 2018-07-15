@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import ReactMarkdown from 'react-markdown';
 
 import { ProjectContainer, ProjectTitle, ProjectDesc, ProjectImage } from './styles';
 
@@ -19,7 +20,7 @@ class Project extends Component {
             <ProjectTitle>{currentEntry.fields.title}</ProjectTitle>
             <ProjectImage src={currentEntry.fields.photos[0].fields.file.url} alt={currentEntry.fields.title} key={currentEntry.fields.photos[0].sys.id} />
             {currentEntry.fields.description &&
-              <ProjectDesc>{currentEntry.fields.description}</ProjectDesc>
+              <ProjectDesc><ReactMarkdown source={currentEntry.fields.description} /></ProjectDesc>
             }
             {currentEntry.fields.photos.slice(1, currentEntry.fields.photos.length).map(photo => (
               <ProjectImage src={photo.fields.file.url} alt={currentEntry.fields.title} key={photo.sys.id} />

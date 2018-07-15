@@ -12,11 +12,12 @@ export const ProjectContainer = styled.main`
 export const ProjectTitle = styled.h1`
   font-family: 'Roboto Slab',sans-serif;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 50px;
   text-align: right;
   margin-top: 0;
   margin-bottom: -70px;
   margin-right: 100px;
+  opacity: 0.7;
 
   ${media.mobile`
     font-size: 40px;
@@ -26,11 +27,11 @@ export const ProjectTitle = styled.h1`
   `}
 `;
 
-export const ProjectDesc = styled.p`
-font-family: 'Roboto Slab',sans-serif; 
+export const ProjectDesc = styled.div`
+  font-family: 'Roboto Slab',sans-serif; 
   display: block;
   font-weight: 400;
-  max-width: 500px;
+  max-width: 600px;
   text-align: left;
   font-size: 22px;
   line-height: 2;

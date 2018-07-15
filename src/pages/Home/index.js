@@ -11,10 +11,13 @@ class Home extends Component {
     const {
       entries,
     } = this.props;
+
+    const sortEntries = entries.sort((a, b) => a.fields.order - b.fields.order);
+    
     return (
       <div>
         <PortfolioContainer>
-          {entries.map(entry => (
+          {sortEntries.map(entry => (
             <ProjectThumb key={entry.sys.id} project={entry.fields} />
           ))
           }
