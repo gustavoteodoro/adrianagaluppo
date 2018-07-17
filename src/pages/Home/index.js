@@ -13,7 +13,7 @@ class Home extends Component {
     } = this.props;
 
     const sortEntries = entries.sort((a, b) => b.fields.order - a.fields.order);
-    console.log(sortEntries)
+    
     return (
       <div>
         <PortfolioContainer>
