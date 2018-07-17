@@ -6,6 +6,7 @@ import Project from './pages/Project';
 import Bio from './pages/Bio';
 import Contact from './pages/Contact';
 import Header from './molecules/Header';
+import Footer from './molecules/Footer';
 import { updateEntries } from './actions/entries';
 import { getEntries } from './services/entries';
 
@@ -27,6 +28,7 @@ class App extends Component {
                 <Route path="/bio" component={Bio} />
                 <Route path="/contact" component={Contact} />
               </Switch>
+              <Footer>Copyright © 2018</Footer> 
             </div>
           </ BrowserRouter>
       </div>
