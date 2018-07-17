@@ -31,13 +31,13 @@ export const ProjectDesc = styled.div`
   font-family: 'Roboto Slab',sans-serif; 
   display: block;
   font-weight: 400;
-  max-width: 600px;
-  text-align: left;
   font-size: 22px;
   line-height: 2;
   margin-left: 100px;
   margin-bottom: 0;
   margin-top: 0;
+  margin-right: 100px;
+  text-align: justify;
 
   ${media.mobile`
     font-size: 16px;

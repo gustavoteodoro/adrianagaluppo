@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Project from './pages/Project';
+import Bio from './pages/Bio';
+import Contact from './pages/Contact';
 import Header from './molecules/Header';
 import { updateEntries } from './actions/entries';
 import { getEntries } from './services/entries';
@@ -22,6 +24,8 @@ class App extends Component {
               <Switch>
                 <Route path="/" exact={true} component={Home} />
                 <Route path="/portfolio/:projectSlug" component={Project} />
+                <Route path="/bio" component={Bio} />
+                <Route path="/contact" component={Contact} />
               </Switch>
             </div>
           </ BrowserRouter>

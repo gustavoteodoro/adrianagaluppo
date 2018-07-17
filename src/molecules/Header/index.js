@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-import { HeaderContainer, HeaderTitle } from './styles';
+import { HeaderContainer, HeaderTitle, HeaderNav, HeaderList, MenuItem } from './styles';
 
 class Header extends Component {
   render() {
@@ -12,6 +12,19 @@ class Header extends Component {
         <Link to="/">
           <HeaderTitle>adriana <span>galuppo</span></HeaderTitle>
         </Link>
+        <HeaderNav>
+          <HeaderList>
+            <Link to="/">
+              <MenuItem>work</MenuItem>
+            </Link>
+            <Link to="/bio">
+              <MenuItem>bio</MenuItem>
+            </Link>
+            <Link to="/contact">
+              <MenuItem>contact</MenuItem>
+            </Link>
+          </HeaderList>
+        </HeaderNav>
       </HeaderContainer>
     );
   }
