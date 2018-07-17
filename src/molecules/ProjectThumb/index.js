@@ -8,10 +8,11 @@ class ProjectThumb extends Component {
     const {
       project,
     } = this.props;
+    
     return (
       <ProjectThumbContainer>        
         <Link to={`/portfolio/${project.slug}`}>
-          <ProjectThumbImage src={project.photos[0].fields.file.url} alt={project.title} />
+          <ProjectThumbImage src={project.cover.fields.file.url} alt={project.title} />
           <ProjectTitle>{project.title}</ProjectTitle>
         </Link>
       </ProjectThumbContainer>

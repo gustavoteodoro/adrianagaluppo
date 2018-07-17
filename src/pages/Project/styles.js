@@ -50,9 +50,11 @@ export const ProjectDesc = styled.div`
 export const ProjectImage = styled.img`
   display: block;
   max-width: 100%;
-  margin: 100px auto;
+  margin: 10vh auto;
+  height: 80vh;
 
   ${media.mobile`
     margin: 40px auto;
+    height: auto;
   `}
 `;
