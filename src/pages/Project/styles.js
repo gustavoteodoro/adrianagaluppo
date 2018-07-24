@@ -10,13 +10,13 @@ export const ProjectContainer = styled.main`
 `;
 
 export const ProjectTitle = styled.h1`
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto Slab',sans-serif;
   font-weight: 400;
   font-size: 36px;
   text-align: right;
   margin-top: 0;
   margin-bottom: -70px;
-  margin-right: 20vh;
+  margin-right: 180px;
   opacity: 0.7;
 
   ${media.mobile`
@@ -28,7 +28,7 @@ export const ProjectTitle = styled.h1`
 `;
 
 export const ProjectDesc = styled.div`
-  font-family: 'Roboto',sans-serif; 
+  font-family: 'Roboto Slab',sans-serif; 
   display: block;
   font-weight: 400;
   font-size: 16px;
