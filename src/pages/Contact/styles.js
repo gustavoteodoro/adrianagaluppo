@@ -8,7 +8,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactText = styled.div`
-  font-family: 'Roboto Slab',sans-serif;
+  font-family: 'Roboto',sans-serif;
   font-size: 22px;
   line-height: 2;
   text-align: center;

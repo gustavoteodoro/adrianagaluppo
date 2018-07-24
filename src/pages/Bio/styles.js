@@ -8,13 +8,13 @@ export const BioContainer = styled.div`
 `;
 
 export const BioText = styled.div`
-  font-family: 'Roboto Slab',sans-serif;
-  font-size: 22px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 16px;
   line-height: 2;
-  text-align: justify;
+  text-align: left;
 
   ${media.mobile`
     font-size: 16px;
-    text-align: justify;
+    text-align: left;
   `}
 `;

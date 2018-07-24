@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { media } from '../../bosons/media';
 
 export const ProjectTitle = styled.h1`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   opacity: 0;
   transition: opacity .3s ease;
